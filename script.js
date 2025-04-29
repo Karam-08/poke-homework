@@ -8,9 +8,7 @@ if(isIndex){ // If the element pokemon Cards exists (only exists in the index pa
     favoritePokemon.forEach(name =>{ // For each pokemon
         fetch(`https://pokeapi.co/api/v2/pokemon${name}`) // Fetch their stats
         .then(response =>{
-            if(!response.ok){
-                throw new Error('Network response was bad: ' + response.statusText)
-            }
+            if(!response.ok){throw new Error('Network response was bad: ' + response.statusText)}
             return response.json()
         })
         .then(info =>{ // Then create a card for each pokemon
