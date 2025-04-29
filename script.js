@@ -5,6 +5,7 @@ const isPokedex = document.getElementById("searchBtn")
 
 // Index Page Logic
 if(isIndex){ // If the element pokemon Cards exists (only exists in the index page)
+    cards.innerHTML = '';
     favoritePokemon.forEach(name =>{ // For each pokemon
         fetch(`https://pokeapi.co/api/v2/pokemon${name}`) // Fetch their stats
         .then(response =>{
@@ -31,7 +32,11 @@ if(isIndex){ // If the element pokemon Cards exists (only exists in the index pa
 }
 
 if(isPokedex){
+    const pokeDex = document.getElementById('pokemonInfo')
+    var search = document.getElementById('search').value
+    pokeDex.innerHTML = '';
     
+    function lookUp(){
+
+    }
 }
-
-
