@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pokedex.css">
+    <link rel="stylesheet" href="style.css">
     <title>Pokedex</title>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
     </nav>
     <div id="search">
         <input type="text" id="pokemonInput" placeholder="Enter Pokemon name or ID">
-        <button id="search" onclick="lookUp()">Search</button>
+        <button id="searchBtn" onclick="lookUp()">Search</button>
     </div>
     <div id="pokemonInfo"></div>
 </body>
